@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/style-1366.css" media="(max-width:1366px)">
+    <link rel="stylesheet" href="./style/style-768.css" media="(max-width:1200px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-	<!-- light-box -->
-	<!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick.css"/>
     <title>AruBio</title>
+    <!-- FANCYBOX -->
 </head>
 <body>
-    <header>
+    <header class="header_section">
         <div class="wrapper">
             <div class="header">
-                <div class="header_left-block">
-                    <nav>
+                <div class="header_navigation">
+                    <nav role="navigation">
                         <ul>
-                            <li class="nav-item">
-                                <a href="#">О компании</a>
+                            <li class="header_nav-item">
+                                <a href="#" class="header_nav-item-link">О компании</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#">Доставка и оплата</a>
+                            <li class="header_nav-item">
+                                <a href="#" class="header_nav-item-link">Доставка и оплата</a>
                             </li>
-                            <li class="nav-item sale">
-                                <a href="#">Акции <img src="./images/sale.png" alt="Sale"></a>
+                            <li class="header_nav-item sale">
+                                <a href="#" class="header_nav-item-link">Акции <img src="./images/sale.png" alt="Акция"></a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#">Прайс</a>
+                            <li class="header_nav-item">
+                                <a href="#" class="header_nav-item-link">Прайс</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#">Вопрос-ответ</a>
+                            <li class="header_nav-item">
+                                <a href="#" class="header_nav-item-link">Вопрос-ответ</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#">Контакты</a>
+                            <li class="header_nav-item">
+                                <a href="#" class="header_nav-item-link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -46,13 +48,13 @@
                 <div class="header_right-block">
                     <div class="socials">
                         <p>Начать чат:</p>
-                        <a href="#" class="whatsapp-link"><img src="./images/whatsapp (2) 2.png" alt="whatsapp"></a>
-                        <a href="#" class="viber-link"><img src="./images/viber.png" alt="whatsapp"></a>
+                        <a href="#" class="whatsapp-link"><img src="./images/whatsapp (2) 2.png" alt="Whatsapp"></a>
+                        <a href="#" class="viber-link"><img src="./images/viber.png" alt="Viber"></a>
                     </div>
                     <div class="authorizaion">
                         <ul>
                             <li class="login">
-                                <a href="#"><img src="images/user.png" alt="user" /> Войти</a>
+                                <a href="#"><img src="images/user.png" alt="Пользователь" /> Войти</a>
                             </li>
                             <li class="registration">
                                 <a href="#">Регистрация</a>
@@ -63,105 +65,174 @@
             </div>
         </div>
     </header>
-    <main>
+    <div class="header-secondary">
         <div class="main">
             <div class="wrapper">
                 <div class="main">
                     <div class="left-contact">
-                        <div class="logo"><img src="./images/Logo_1 1.png" alt="Logotype"></div>
+                        <div class="logo"><img src="./images/Logo_1 1.png" alt="AruBio"></div>
                         <div class="phone-number">
-                            <img src="./images/phone.png" alt="Phone">
-                            <h5>+7 495868 8585</h5>
+                            <img src="./images/phone.png" alt="Телефон">
+                            <a class="phone-link" href="tel:+74958688585">+7 495 868 8585</a>
                             <a href="#" class="call" >Обратный звонок</a>
                         </div>
                         <div class="email">
-                            <img src="./images/mail.png" alt="Mail">
-                            <p>arubio@gmail.com</p>
+                            <img src="./images/mail.png" alt="E-mail">
+                            <a href="mailto:arubio@gmail.com">arubio@gmail.com</a>
                         </div>
                     </div>
                     <div class="right-contact">
                         <div class="search">
                             <input type="text" placeholder="Поиск по сайту">
-                            <a href="/"><img src="./images/search.png"></a>
+                            <a href="/"><img alt="Поиск" src="./images/search.png"></a>
                         </div>
-                        <div class="cart">
-                            <a href="/"><img src="./images/Grocery.png" alt="Cart"></a>
+                        <a href="/" class="cart">
+                            <img src="./images/Grocery.png" alt="Корзина">
                             <p class="cart-count">10</p>
                             <p>Корзина</p>
-                        </div>
+                        </a>
                     </div>
 		      </div>   
             </div>
         </div>
-    </main>
-    <section>
+    </div>
+    <!-- phone header -->
+    <div class="header-phone">
+        <div class="phone-wrapper">
+            <div class="header-phone_menu">
+                <div class="phone_menu-left">
+                    <div class="phone_menu-item">
+                        <a href="/" class="header-phone_nav-hamburger">
+                            <img src="./images/hamburger.svg" alt="Меню" class="hamburger">
+                        </a>
+                    </div>
+                    <div class="phone_menu-item">
+                        <a href="/" class="logo-phone">
+                            <img src="./images/Logo_1 1.png" alt="AruBio" class="hamburger">
+                        </a>
+                    </div>
+                    <div class="phone_menu-item phone_menu-number">
+                        <img src="./images/phone.png" alt="Телефон">
+                        <a href="tel:74958688585" class="phone-link">+7 495 868 8585</span>
+                    </div>
+                </div>
+                <div class="phone_menu-right">
+                    <div class="phone_menu-item">
+                        <img src="./images/search.png" alt="Поиск" class="phone_menu-search">
+                    </div>
+                    <div class="phone_menu-item">
+                        <div class="phone_menu-login">
+                            <img src="./images/user.png" alt="Вход">
+                        </div>
+                    </div>
+                    <div class="phone_menu-item">
+                        <a href="/" class="cart">
+                            <img src="./images/Grocery.png" alt="Корзина">
+                            <p class="cart-count">10</p>
+                            <p>Корзина</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_section">
         <div class="wrapper">
             <div class="menu">
                 <ul>
-                    <li><a href="/">Какао продукция <img src="./images/ic_chevron.png"></a></li>
-                    <li><a href="/">Кокосова продукция <img src="./images/ic_chevron.png"></a></li>
-                    <li><a href="/">Ореховая мука <img src="./images/ic_chevron.png"></a></li>
-                    <li><a href="/">Кэроб <img src="./images/ic_chevron.png"></a></li>
-                    <li><a href="/">Натуральные подсластители <img src="./images/ic_chevron.png"></a></li>
-                    <li><a href="/">Сублимированные ягоды и порошки <img src="./images/ic_chevron.png"></a></li>
+                    <li class="menu_item">
+                       <a class="menu_item-link" href="/">Какао продукция <img alt="Стрелка" src="./images/ic_chevron.png"></a>
+                       <ul class="dropdown">
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао масло натуральное</a></li>
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао масло рафинированное</a></li>
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао тертое</a></li>
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао порошок натуральный</a></li>
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао порошок алкализированный</a></li>
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао порошок обезжиренный</a></li>
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао крупка</a></li>
+                        <li class="dropdown_item"><a class="dropdown_link" href="#">Какао бобы</a></li>
+                     </ul>
+                    </li>
+                    <li class="menu_item"><a class="menu_item-link" href="/">Кокосова продукция <img alt="Стрелка" src="./images/ic_chevron.png"></a></li>
+                    <li class="menu_item"><a class="menu_item-link" href="/">Ореховая мука <img alt="Стрелка" src="./images/ic_chevron.png"></a></li>
+                    <li class="menu_item"><a class="menu_item-link" href="/">Кэроб <img alt="Стрелка" src="./images/ic_chevron.png"></a></li>
+                    <li class="menu_item"><a class="menu_item-link" href="/">Натуральные подсластители <img alt="Стрелка" src="./images/ic_chevron.png"></a></li>
+                    <li class="menu_item"><a class="menu_item-link" href="/">Сублимированные ягоды и порошки <img alt="Стрелка" src="./images/ic_chevron.png"></a></li>
                 </ul>
             </div>
         </div>
-    </section>
-    <section class="slider_section">
+    </div>
+    <div class="slider_section">
         <div class="wrapper">
             <div class="slider">
-                <div class="slider_title-block">
-                    <div class="slider_title">
-                        <h1>Акция 4+1 на какао масло</h1>
-                        <p>При заказе 4 упоковок какао-маса 100 гр. вы получите 5 в подарок.</p>
+                <div class="slider-item">
+                    <div class="slider_title-block">
+                        <div class="slider_title">
+                            <h1>Акция 4+1 на какао масло</h1>
+                            <p>При заказе 4 упоковок какао-маса 100 гр. вы получите 5 в подарок.</p>
+                        </div>
+                        <button class="btn slider_button">
+                            Заказать
+                        </button>
                     </div>
-                    <button class="btn slider_button">
-                        Заказать
-                    </button>
+                    <div class="slider_image-block">
+                        <img alt="Акция 4+1 на какао масло" class="slider_image" src="./images/slider-item.png">
+                    </div>
                 </div>
-                <div class="slider_image-block">
-                    <img class="slider_image" src="./images/slider-item.png">
+                <div class="slider-item">
+                    <div class="slider_title-block">
+                        <div class="slider_title">
+                            <h1>Акция 4+1 на какао масло</h1>
+                            <p>При заказе 4 упоковок какао-маса 100 гр. вы получите 5 в подарок.</p>
+                        </div>
+                        <button class="btn slider_button">
+                            Заказать
+                        </button>
+                    </div>
+                    <div class="slider_image-block">
+                        <img alt="Акция 4+1 на какао масло" class="slider_image" src="./images/slider-item.png">
+                    </div>
                 </div>
-            </div>
-            <div class="slider_controlls-block">
-                    <div class="slider_controll slider_active-controll"></div>
-                    <div class="slider_controll"></div>
+
             </div>
         </div>
+        <!-- <div class="slider_controlls-block">
+            <div class="slider_controll slider_active-controll"></div>
+            <div class="slider_controll"></div>
+        </div> -->
         <div class="slider_background" style="background: url('./images/background.jpg') center right / contain no-repeat;"></div>
-    </section>
-    <section class="banners_section">\
+    </div>
+    <div class="banners_section">
         <div class="wrapper">
             <div class="banners">
                 <div class="banners_item">
-                    <img src="./images/delivery-banner.png" alt="Delivery" class="banners_img">
+                    <img src="./images/delivery-banner.png" alt="Доставка по всей стране" class="banners_img">
                     <p class="banners_title">
                         Доставка по всей стране
                     </p>
                 </div>
                 <div class="banners_item">
-                    <img src="./images/shopping-cart-banner.png" alt="Shopping Cart" class="banners_img">
+                    <img src="./images/shopping-cart-banner.png" alt="Оптовые цены на продукции" class="banners_img">
                     <p class="banners_title">
                         Оптовые цены на продукции
                     </p>
                 </div>
                 <div class="banners_item">
-                    <img src="./images/shield-banner.png" alt="Shield" class="banners_img">
+                    <img src="./images/shield-banner.png" alt="Гарантия качества" class="banners_img">
                     <p class="banners_title">
                         Гарантия качества
                     </p>
                 </div>
                 <div class="banners_item">
-                    <img src="./images/world-banner.png" alt="World" class="banners_item-img">
+                    <img src="./images/world-banner.png" alt="Трендовые суперфуды" class="banners_item-img">
                     <p class="banners_item-title">
                         Трендовые суперфуды
                     </p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="categories_section">
+    </div>
+    <div class="categories_section">
         <div class="wrapper">
             <h2 class="categories_title">
                 Категории
@@ -169,47 +240,45 @@
             <div class="categroise-list">
             	<div class="categories_list_item">
                     <a href="/" class="categories_link">                    
-                        <img src="./images/categories/cocoa-beans.png" alt="Coconats">
+                        <img src="./images/categories/cocoa-beans.png" loading="lazy" alt="Какао продукция">
                         <p class="categories_item-title">Какао продукция</p>
                     </a>
                 </div>
                 <div class="categories_list_item">
                     <a href="/" class="categories_link">
-                        <img src="./images/categories/coconuts-with-coconuts-flakes.png" alt="Coconats">
+                        <img src="./images/categories/coconuts-with-coconuts-flakes.png" loading="lazy" alt="Кокосовая продукция">
                         <p class="categories_item-title">Кокосовая продукция</p>
                     </a>
                 </div>
                 <div class="categories_list_item">
                     <a href="/" class="categories_link">
-                        <img src="./images/categories/almond-flour.png" alt="Coconats">
+                        <img src="./images/categories/almond-flour.png" loading="lazy" alt="Ореховая мука">
                         <p class="categories_item-title">Ореховая мука</p>
                     </a>
                 </div>
 	            <div class="categories_list_item">
 	                <a href="/" class="categories_link">
-	                    <img src="./images/categories/dry-carob-pods-and-powder-top-view.png" alt="Coconats">
+	                    <img src="./images/categories/dry-carob-pods-and-powder-top-view.png" loading="lazy" alt="Кэроб">
 	                    <p class="categories_item-title">Кэроб</p>
 	                </a>
 	            </div>
 	            <div class="categories_list_item">
 	                <a href="/" class="categories_link">
-	                    <img src="./images/categories/brown-cane-sugar.png" alt="Coconats">
+	                    <img src="./images/categories/brown-cane-sugar.png" loading="lazy" alt="Натуральные подсластители">
 	                    <p class="categories_item-title">Натуральные подсластители</p>
 	                </a>
 	            </div>
 	            <div class="categories_list_item">
 	                <a href="/" class="categories_link">
-	                    <img src="./images/categories/chocolate-bar-with-dried-berries-fruit-and-nuts.png" alt="Coconats">
+	                    <img src="./images/categories/chocolate-bar-with-dried-berries-fruit-and-nuts.png" loading="lazy" alt="Сублимированные ягоды и порошки">
 	                    <p class="categories_item-title">Сублимированные ягоды и порошки</p>
 	                </a>
 	            </div>
             </div>
         </div>
-        <div class="categories_background-img">
-            <img src="./images/categories/background-grass.png" alt="Grass">
-        </div>
-    </section>
-    <section class="popular_section">
+        <div class="categories_background-img"></div>
+    </div>
+    <div class="popular_section">
         <div class="wrapper">
             <div class="popular_title">Популярные товары</div>
             <div class="popular">
@@ -217,7 +286,7 @@
                     <button class="btn popular_item-buy-btn">
                         Купить в 1 клик
                     </button>
-                    <img class="pupular_item-image" src="./images/popular/cacao.png" alt="Popular product">
+                    <img loading="lazy" class="pupular_item-image" src="./images/popular/cacao.png" alt="Популярынй продукт">
                     <div class="popular_item-price-block">
                         <p class="popular_item-price">190 <i class="fas fa-ruble-sign"></i></p>
                         <p class="popular_item-price-old">302 <i class="fas fa-ruble-sign"></i></p>
@@ -225,15 +294,15 @@
                     </div>
                     <p class="popular_item-title">Какао тертое, 100 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
                         <p class="popular_item-review">5 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
-                        <img src="./images/popular/grocery.png" alt="Cart">
+                        <img loading="lazy" src="./images/popular/grocery.png" alt="Корзина">
                         В корзину
                     </button>
                 </div>
@@ -241,7 +310,7 @@
                     <button class="btn popular_item-buy-btn">
                         Купить в 1 клик
                     </button>
-                    <img class="pupular_item-image" src="./images/popular/Какао-масло_100 6.png" alt="Popular product">
+                    <img loading="lazy" class="pupular_item-image" src="./images/popular/Какао-масло_100 6.png" alt="Популярный продукт">
                     <div class="popular_item-price-block">
                         <p class="popular_item-price">250 <i class="fas fa-ruble-sign"></i></p>
                         <p class="popular_item-price-old">397 <i class="fas fa-ruble-sign"></i></p>
@@ -249,15 +318,15 @@
                     </div>
                     <p class="popular_item-title">Какао-масло, 100 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
                         <p class="popular_item-review">30 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
-                        <img src="./images/popular/grocery.png" alt="Cart">
+                        <img loading="lazy" src="./images/popular/grocery.png" alt="Корзина">
                         В корзину
                     </button>
                 </div>
@@ -265,7 +334,7 @@
                     <button class="btn popular_item-buy-btn">
                         Купить в 1 клик
                     </button>
-                    <img class="pupular_item-image" src="./images/popular/Какао_1000 1.png" alt="Popular product">
+                    <img loading="lazy" class="pupular_item-image" src="./images/popular/Какао_1000 1.png" alt="Популярный продукт">
                     <div class="popular_item-price-block">
                         <p class="popular_item-price">970 <i class="fas fa-ruble-sign"></i></p>
                         <p class="popular_item-price-old">1 540 <i class="fas fa-ruble-sign"></i></p>
@@ -273,15 +342,15 @@
                     </div>
                     <p class="popular_item-title">Какао тертое, 1000 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
                         <p class="popular_item-review">30 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
-                        <img src="./images/popular/grocery.png" alt="Cart">
+                        <img loading="lazy" src="./images/popular/grocery.png" alt="Корзина">
                         В корзину
                     </button>
                 </div>
@@ -289,7 +358,7 @@
                     <button class="btn popular_item-buy-btn">
                         Купить в 1 клик
                     </button>
-                    <img class="pupular_item-image" src="./images/popular/Клубника 1.png" alt="Popular product">
+                    <img loading="lazy" class="pupular_item-image" src="./images/popular/Клубника 1.png" alt="Популярный продукт">
                     <div class="popular_item-price-block">
                         <p class="popular_item-price">370 <i class="fas fa-ruble-sign"></i></p>
                         <p class="popular_item-price-old">450 <i class="fas fa-ruble-sign"></i></p>
@@ -297,28 +366,28 @@
                     </div>
                     <p class="popular_item-title">Какао тертое, 1000 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
-                        <img src="./images/popular/star.png" class="star" alt="Star">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
                         <p class="popular_item-review">30 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
-                        <img src="./images/popular/grocery.png" alt="Cart">
+                        <img loading="lazy" src="./images/popular/grocery.png" alt="Корзина">
                         В корзину
                     </button>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="pricelist_section">
+    </div>
+    <div class="pricelist_section">
         <div class="wrapper">
             <div class="pricelist">
                 <div class="pricelist_title-block">
-                    <h5 class="pricelist_title">
+                    <p class="pricelist_title">
                         Получить прайс-лист
-                    </h5>
+                    </p>
                     <p class="pricelist_subtitle">
                         Укажите ваш электронный адрес и мы пришлем вам прайс-лист.
                     </p>
@@ -329,14 +398,13 @@
                     <button class="btn pricelist_form-btn">Перезвоните мне</button>
                 </form>
             </div>
-            <!-- <div class="pricelist_background"><img src="./images/pricelist-background.png" alt="Background"></div> -->
         </div>
-    </section>
-    <section class="about_section">
+    </div>
+    <div class="about_section">
         <div class="wrapper">
             <div class="about">
                 <div class="about_image-block">
-                    <img class="about_image" src="./images/about.png" alt="About">
+                    <img loading="lazy" class="about_image" src="./images/about.png" alt="О нас">
                 </div>
                 <div class="about_title-block">
                     <h2 class="about_title">
@@ -344,48 +412,54 @@
                     </h2>
                     <div class="about_subtitle">
                         <ul>
-                            <li><img class="mark" src="./images/mark.png" alt="Mark"><p class="about_subtitle-item">
+                            <li>
+                                <img loading="lazy" class="mark" src="./images/mark.png" alt="Галочка"><p class="about_subtitle-item">
                                 <span>Кто мы:</span> интернет-магазин ингредиентов для производства домашнего шоколада и ЗОЖ в Москве с доставкой по всей России.
                                 </p>
                             </li>
-                            <li><img class="mark" src="./images/mark.png" alt="Mark"><p class="about_subtitle-item">
+                            <li>
+                                <img loading="lazy" class="mark" src="./images/mark.png" alt="Галочка"><p class="about_subtitle-item">
                                 <span> Наша цель:</span> будучи сами приверженцами ЗОЖ мы поставили перед собой цель популяризировать здоровое питание, сделать его доступным для каждого в нашей стране вне зависимости от удаленности от Москвы и уровня дохода. Именно поэтому мы придерживаемся принципа «Шоколадка за 100 руб.». Это означает, что в нашем магазине стоимость основной продукции в расчете на 1 шоколадку не должна превышать 100 руб.
                                 </p>
                             </li>
-                            <li><img class="mark" src="./images/mark.png" alt="Mark"><p class="about_subtitle-item">
+                            <li>
+                                <img loading="lazy" class="mark" src="./images/mark.png" alt="Галочка"><p class="about_subtitle-item">
                                 <span>Мы предлагаем:</span> натуральные ингредиенты для производства шоколада и ЗОЖ десертов. Наши ингредиенты не содержат белый сахар, добавки, глютен. Наша какао продукция сертифицирована лабораторией РосТест-Москва и НИИ «Кондитерской промышленности»
                                 </p>
                             </li>
                         </ul>
                     </div>
+                    <div class="about_image-block-phone">
+                        <img loading="lazy" class="about_image" src="./images/about.png" alt="О нас">
+                    </div>
                     <div class="socials-block">
                         <p class="socials_title">Мы в социальных сетях </p>
                         <div class="socials">
                             <a href="/" class="socials_item">
-                                <img src="./images/socials/Mask Group-2.png" alt="VK">
+                                <img loading="lazy" src="./images/socials/Mask Group-2.png" alt="VK">
                             </a>
                             <a href="/" class="socials_item">
-                                <img src="./images/socials/Mask Group.png" alt="Odnoklassniki">
+                                <img loading="lazy" src="./images/socials/Mask Group.png" alt="Odnoklassniki">
                             </a>
                             <a href="/" class="socials_item">
-                                <img src="./images/socials/Mask Group-1.png" alt="Facebook">
+                                <img loading="lazy" src="./images/socials/Mask Group-1.png" alt="Facebook">
                             </a>
                             <a href="/" class="socials_item">
-                                <img src="./images/socials/Mask Group-5.png" alt="Youtube">
+                                <img loading="lazy" src="./images/socials/Mask Group-5.png" alt="Youtube">
                             </a>
                             <a href="/" class="socials_item">
-                                <img src="./images/socials/Mask Group-4.png" alt="Instagram">
+                                <img loading="lazy" src="./images/socials/Mask Group-4.png" alt="Instagram">
                             </a>
                             <a href="/" class="socials_item">
-                                <img src="./images/socials/Mask Group-3.png" alt="Twitter">
+                                <img loading="lazy" src="./images/socials/Mask Group-3.png" alt="Twitter">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="recipes_section">
+    </div>
+    <div class="recipes_section">
         <div class="wrapper">
             <div class="recipes">
                 <div class="recipes_title-block">
@@ -394,23 +468,21 @@
                     <button class="btn recipes_btn">Еще рецепты</button>
                 </div>
                 <div class="recipes_video">
-                    <img src="./images/video.png" alt="Video" class="recipes_video-thumb">
+                    <img loading="lazy" src="./images/video.png" alt="Видео рецепт шоколада с начинкой" class="recipes_video-thumb">
                 </div>
             </div>
         </div>
-    </section>
-    <section class="work_section">
-        <div class="work_background">
-            <img class="work_background-img" src="./images/work/img.png" alt="Dish">
-        </div>
+    </div>
+    <div class="work_section">
         <div class="wrapper">
-            <div class="work">                <div class="work_container">
+            <div class="work">                
+                <div class="work_container">
                     <h1 class="work_title">
                         Как мы работаем
                     </h1>
                     <div class="work_subtitle-block">
                         <div class="work_subtitle-item">
-                            <img class="item-order-image" src="./images/work/order.png" alt="Order">
+                            <img loading="lazy" class="item-order-image" src="./images/work/order.png" alt="Заказ товара">
                             <h2 class="work_subtitle-item-title">
                                 Заказ товара
                             </h2>
@@ -418,17 +490,19 @@
                                 Выберите продукцию самостоятельно через личный кабинет или при помощи менеджера.
                             </p>
                         </div>
-                        <div class="work_subtitle-item work_subtitle-item-upper">                            
+                        <div class="work_subtitle-item work_subtitle-item-upper"> 
+                            <img loading="lazy" class="work-formate-image-phone" src="./images/work/package2.png" alt="Оформление">                           
                             <h2 class="work_subtitle-item-title">
                                 Оформление
                             </h2>
                             <p class="work_subtitle">
                                 Оформите заказ, выберите способ доставки и произведите оплату (работаем с юридическими и физическими лицами).                            
                             </p>
-                            <img class="work-formate-image" src="./images/work/package2.png" alt="Formate order">
+                            <img loading="lazy" class="work-formate-image" src="./images/work/package2.png" alt="Формирование">
                         </div>
                         <div class="work_subtitle-item item-small">
-                            <img class="work-recieve-image" src="./images/work/package.png" alt="Formate order">
+                            <img loading="lazy" class="work-recieve-image-phone" src="./images/work/package.png" alt="Получение">
+                            <img loading="lazy" class="work-recieve-image" src="./images/work/package.png" alt="Получение">
                             <h2 class="work_subtitle-item-title">
                                 Получение
                             </h2>
@@ -436,37 +510,217 @@
                                 Получите товар самостоятельно, при помощи курьера или транспортной компании.                            
                             </p>
                         </div>
-                        <img class="work_way-img-one" src="./images/work//way 1.png" alt="Line">
-                        <img class="work_way-img-two" src="./images/work//way 2.png" alt="Line">
+                        <img loading="lazy" class="work_way-img-one" src="./images/work/way 1.png" alt="Путь">
+                        <img loading="lazy" class="work_way-img-two" src="./images/work/way 2.png" alt="Путь">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="sertificates-section">
+        <div class="work_background work_background-phone">
+            <img loading="lazy" class="work_background-img" src="./images/work/img.png" alt="Блюдо">
+        </div>
+    </div>
+    <div class="sertificates-section">
         <div class="wrapper">
             <div class="sertificates">
                 <h2 class="sertificates_title">
                     Наши сертификаты
                 </h2>
+                <!-- <button class="sertificates_slider-control">
+                    <img src="./images/sertificates/Arrow 2.png" alt="Стрелка">
+                </button> -->
                 <div class="sertificates_slider">
-                    <div class="sertificates_slider-left-control">
-                        
+                        <div class="sertificates_slider-item sertificate-margin-left">
+                            <img loading="lazy" src="./images/sertificates/document1.png" alt="Сертификат">
+                        </div>
+                        <div class="sertificates_slider-item">
+                            <img loading="lazy" src="./images/sertificates/document2.png" alt="Сертификат">
+                        </div>
+                        <div class="sertificates_slider-item">
+                            <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
+                        </div>
+                        <div class="sertificates_slider-item">
+                            <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
+                        </div>
+                        <div class="sertificates_slider-item sertificate-margin-left">
+                            <img loading="lazy" src="./images/sertificates/document1.png" alt="Сертификат">
+                        </div>
+                        <div class="sertificates_slider-item">
+                            <img loading="lazy" src="./images/sertificates/document2.png" alt="Сертификат">
+                        </div>
+                        <div class="sertificates_slider-item">
+                            <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
+                        </div>
+                        <div class="sertificates_slider-item">
+                            <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
+                        </div>
+                </div>
+                <!-- <button class="sertificates_slider-control">
+                    <img src="./images/sertificates/Arrow 2.png" alt="Стрелка">
+                </button> -->
+            </div>
+        </div>
+    </div>
+    <div class="partners_section">
+        <div class="wrapper">
+            <div class="partners">
+                <h2 class="partners_title">
+                    Нам доверяют
+                </h2>
+                <div class="partners_slider">
+                    <div class="patners_slider-item">
+                        <img loading="lazy" src="./images/partners/wildberries.png" alt="Партнер" class="patners_slider-item-img">
                     </div>
-
-
-                    
-                    <div class="sertificates_slider-items">
-
+                    <div class="patners_slider-item">
+                        <img loading="lazy" src="./images/partners/ozon.png" alt="Партнер" class="patners_slider-item-img">
                     </div>
-
-
-                    <div class="sertificates_slider-rightcontrol">
-
+                    <div class="patners_slider-item">
+                        <img loading="lazy" src="./images/partners/yandexmarket.png" alt="Партнер" class="patners_slider-item-img">
+                    </div>
+                    <div class="patners_slider-item">
+                        <img loading="lazy" src="./images/partners/yandexmarket.png" alt="Партнер" class="patners_slider-item-img">
+                    </div>
+                    <div class="patners_slider-item">
+                        <img loading="lazy" src="./images/partners/yandexmarket.png" alt="Партнер" class="patners_slider-item-img">
+                    </div>
+                    <div class="patners_slider-item">
+                        <img loading="lazy" src="./images/partners/yandexmarket.png" alt="Партнер" class="patners_slider-item-img">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="subscribe_section">
+        <div class="subscribe_section-bg"></div>
+        <div class="wrapper">
+            <form class="subscribe_form">
+                <h2 class="subscribe_title">
+                    Подпишитесь на рассылку
+                </h2>
+                <p class="subscribe_subtitle">
+                    Подпишитесь, чтобы получать интересные новости, видео-рецепты, а также скидки и подарки.
+                </p>
+                <div class="subscribe_send">
+                    <input class="subscribe_input-email" type="email" placeholder="Ваш e-mail">
+                    <button class="btn subscribe_btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer_section">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer_header">
+                    <img loading="lazy" src="./images/Logo_1 1.png" alt="AruBio" class="logo footer_logo">
+                    <div class="footer_adress">
+                        <p>ИП Иванова Екатерина Ивановна</p>
+                        <p>ИНН 225496257896</p>
+                        <p>ОГРНИП ​654897000004716</p>
+                    </div>
+                    <div class="footer_socials">
+                        <div class="socials_title footer_socials-title">
+                            Мы в социальных сетях 
+                        </div>
+                        </div>
+                        <div class="socials footer_socials-block">
+                            <a href="/" class="socials_item footer_socials-item">
+                                <img loading="lazy" src="./images/socials/Mask Group-2.png" alt="VK">
+                            </a>
+                            <a href="/" class="socials_item footer_socials-item">
+                                <img loading="lazy" src="./images/socials/Mask Group.png" alt="Odnoklassniki">
+                            </a>
+                            <a href="/" class="socials_item footer_socials-item">
+                                <img loading="lazy" src="./images/socials/Mask Group-1.png" alt="Facebook">
+                            </a>
+                            <a href="/" class="socials_item footer_socials-item">
+                                <img loading="lazy" src="./images/socials/Mask Group-5.png" alt="Youtube">
+                            </a>
+                            <a href="/" class="socials_item footer_socials-item">
+                                <img loading="lazy" src="./images/socials/Mask Group-4.png" alt="Instagram">
+                            </a>
+                            <a href="/" class="socials_item footer_socials-item">
+                                <img loading="lazy" src="./images/socials/Mask Group-3.png" alt="Twitter">
+                            </a>
+                        </div>
+                    </div>
+                <div class="footer_navigation">
+                    <ul class="footer_navigation-block footer_navigation-block-phone">
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Доставка и оплата</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Гарантии</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Как оформить заказ?</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">О коомпании</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Акции</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Прайс</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Вопрос-ответ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_navigation-block">
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Прайс</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Вопрос-ответ</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Новости</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Отзывы</a>
+                        </li>
+                        <li class="footer_navigation-item">
+                            <a href="/" class="footer_navigation-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_contacts">
+                    <div class="footer_contacts-title">
+                        Наши контакты
+                    </div>
+                    <div class="footer_contacts-items-block">
+                        <div class="footer_contacts-item">
+                            <img loading="lazy" src="./images/phone.png" alt="Телефон">
+                            <a class="phone-link" href="tel:+74958688585">+7 495 868 8585</a>
+                        </div>
+                        <div class="footer_contacts-item">
+                            <img loading="lazy" src="./images/mail.png" alt="E-mail">
+                            <a href="mailto:arubio@gmail.com" class="footer_contacts-email">arubio@gmail.com</a>
+                        </div>
+                        <div class="footer_contacts-item">
+                            <span>Начать чат:</span>
+                            <a href="/" class="footer_messenger-link"><img loading="lazy" src="./images/footer/whatsapp.png" alt="Whatsapp"></a>
+                            <a href="/" class="footer_messenger-link"><img loading="lazy" src="./images/footer/viber.png" alt="Viber"></a>
+                        </div>
+                    </div>
+                    <button class="btn footer_contacts-btn">Обратный звонок</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <div class="credits_container">
+        <div class="wrapper">
+            <div class="credits">
+                <p class="credits_title"> <span class="line"></span> © 2021 AruBio</p>
+                <a class="credits_title" href="/">Политика конфиденциальности</a>
+                <a class="credits_title" href="/">Разработка сайта WPNEW</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script type="text/javascript" src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/header-slider.js"></script>
 </body>
 </html>
