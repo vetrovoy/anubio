@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/style-1366.css" media="(max-width:1366px)">
-    <link rel="stylesheet" href="./style/style-768.css" media="(max-width:1200px)">
+    <link rel="stylesheet" href="./style/style-1200.css" media="(max-width:1200px)">
+    <link rel="stylesheet" href="./style/style-768.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="./style/style-360.css" media="(max-width:360px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -14,8 +15,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <title>AruBio</title>
-    <!-- FANCYBOX -->
 </head>
 <body>
     <header class="header_section">
@@ -66,11 +68,10 @@
         </div>
     </header>
     <div class="header-secondary">
-        <div class="main">
             <div class="wrapper">
                 <div class="main">
                     <div class="left-contact">
-                        <div class="logo"><img src="./images/Logo_1 1.png" alt="AruBio"></div>
+                        <a href="/" class="logo"><img src="./images/Logo_1 1.png" alt="AruBio"></a>
                         <div class="phone-number">
                             <img src="./images/phone.png" alt="Телефон">
                             <a class="phone-link" href="tel:+74958688585">+7 495 868 8585</a>
@@ -94,35 +95,38 @@
                     </div>
 		      </div>   
             </div>
-        </div>
     </div>
     <!-- phone header -->
     <div class="header-phone">
-        <div class="phone-wrapper">
+        <div class="wrapper">
             <div class="header-phone_menu">
                 <div class="phone_menu-left">
-                    <div class="phone_menu-item">
+                    <div class="phone_menu-item-left">
                         <a href="/" class="header-phone_nav-hamburger">
                             <img src="./images/hamburger.svg" alt="Меню" class="hamburger">
                         </a>
                     </div>
-                    <div class="phone_menu-item">
+                    <div class="phone_menu-item-left">
                         <a href="/" class="logo-phone">
-                            <img src="./images/Logo_1 1.png" alt="AruBio" class="hamburger">
+                            <img src="./images/Logo_1 1.png" alt="AruBio">
                         </a>
                     </div>
-                    <div class="phone_menu-item phone_menu-number">
+                    <div class="phone_menu-item-left phone_menu-number">
                         <img src="./images/phone.png" alt="Телефон">
                         <a href="tel:74958688585" class="phone-link">+7 495 868 8585</span>
                     </div>
                 </div>
                 <div class="phone_menu-right">
                     <div class="phone_menu-item">
-                        <img src="./images/search.png" alt="Поиск" class="phone_menu-search">
+                        <a href="/" class="phone-menu-link">
+                            <img src="./images/search.png" alt="Поиск" class="phone_menu-search">
+                        </a>
                     </div>
                     <div class="phone_menu-item">
                         <div class="phone_menu-login">
-                            <img src="./images/user.png" alt="Вход">
+                            <a href="/" class="phone-menu-link">
+                                <img src="./images/user.png" alt="Вход">
+                            </a>                        
                         </div>
                     </div>
                     <div class="phone_menu-item">
@@ -182,8 +186,8 @@
                 <div class="slider-item">
                     <div class="slider_title-block">
                         <div class="slider_title">
-                            <h1>Акция 4+1 на какао масло</h1>
-                            <p>При заказе 4 упоковок какао-маса 100 гр. вы получите 5 в подарок.</p>
+                            <h1>Акция 5+2 на какао</h1>
+                            <p>При заказе 5 поковок какао-маса 20 гр. вы получите 1 в подарок.</p>
                         </div>
                         <button class="btn slider_button">
                             Заказать
@@ -193,14 +197,13 @@
                         <img alt="Акция 4+1 на какао масло" class="slider_image" src="./images/slider-item.png">
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- <div class="slider_controlls-block">
             <div class="slider_controll slider_active-controll"></div>
             <div class="slider_controll"></div>
         </div> -->
-        <div class="slider_background" style="background: url('./images/background.jpg') center right / contain no-repeat;"></div>
+        <div class="slider_background"></div>
     </div>
     <div class="banners_section">
         <div class="wrapper">
@@ -294,11 +297,11 @@
                     </div>
                     <p class="popular_item-title">Какао тертое, 100 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Звезда">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Звезда">
                         <p class="popular_item-review">5 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
@@ -318,11 +321,11 @@
                     </div>
                     <p class="popular_item-title">Какао-масло, 100 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
                         <p class="popular_item-review">30 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
@@ -342,11 +345,11 @@
                     </div>
                     <p class="popular_item-title">Какао тертое, 1000 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
                         <p class="popular_item-review">30 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
@@ -366,11 +369,11 @@
                     </div>
                     <p class="popular_item-title">Какао тертое, 1000 гр.</p>
                     <div class="popular_item-rating-block">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
-                        <img loading="lazy" src="./images/popular/star.png" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star.svg" class="star" alt="Рейтинг">
+                        <img loading="lazy" src="./images/popular/rating-star-grey.svg" class="star" alt="Рейтинг">
                         <p class="popular_item-review">30 отзывов</p>
                     </div>
                     <button class="btn popular_item-add-btn">
@@ -393,7 +396,7 @@
                     </p>
                 </div>
                 <form action="submit" class="pricelist_form">
-                    <input class="pricelist_form-input" type="text" placeholder="Ваше мнение">
+                    <input class="pricelist_form-input" type="text" placeholder="Ваше имя">
                     <input class="pricelist_form-input" type="text" placeholder="Ваш e-mail">
                     <button class="btn pricelist_form-btn">Перезвоните мне</button>
                 </form>
@@ -401,7 +404,8 @@
         </div>
     </div>
     <div class="about_section">
-        <div class="wrapper">
+    	<div class="about_section-bg"></div>
+        <div class="wrapper about-wrapper">
             <div class="about">
                 <div class="about_image-block">
                     <img loading="lazy" class="about_image" src="./images/about.png" alt="О нас">
@@ -474,8 +478,8 @@
         </div>
     </div>
     <div class="work_section">
-        <div class="wrapper">
-            <div class="work">                
+        <div class="wrapper wrapper-phone">
+            <div class="work">            
                 <div class="work_container">
                     <h1 class="work_title">
                         Как мы работаем
@@ -530,30 +534,30 @@
                     <img src="./images/sertificates/Arrow 2.png" alt="Стрелка">
                 </button> -->
                 <div class="sertificates_slider">
-                        <div class="sertificates_slider-item sertificate-margin-left">
+                        <a data-fancybox="gallery" href="./images/sertificates/document1.png" class="sertificates_slider-item sertificate-margin-left">
                             <img loading="lazy" src="./images/sertificates/document1.png" alt="Сертификат">
-                        </div>
-                        <div class="sertificates_slider-item">
+                        </a>
+                        <a data-fancybox="gallery" href="./images/sertificates/document2.png" class="sertificates_slider-item">
                             <img loading="lazy" src="./images/sertificates/document2.png" alt="Сертификат">
-                        </div>
-                        <div class="sertificates_slider-item">
+                        </a>
+                        <a data-fancybox="gallery" href="./images/sertificates/document3.png" class="sertificates_slider-item">
                             <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
-                        </div>
-                        <div class="sertificates_slider-item">
+                        </a>
+                        <a data-fancybox="gallery" href="./images/sertificates/document3.png" class="sertificates_slider-item">
                             <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
-                        </div>
-                        <div class="sertificates_slider-item sertificate-margin-left">
+                        </a>
+                        <a data-fancybox="gallery" href="./images/sertificates/document1.png" class="sertificates_slider-item sertificate-margin-left">
                             <img loading="lazy" src="./images/sertificates/document1.png" alt="Сертификат">
-                        </div>
-                        <div class="sertificates_slider-item">
+                        </a>
+                        <a data-fancybox="gallery" href="./images/sertificates/document1.png" class="sertificates_slider-item">
                             <img loading="lazy" src="./images/sertificates/document2.png" alt="Сертификат">
-                        </div>
-                        <div class="sertificates_slider-item">
+                        </a>
+                        <a data-fancybox="gallery" href="./images/sertificates/document1.png" class="sertificates_slider-item">
                             <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
-                        </div>
-                        <div class="sertificates_slider-item">
+                        </a>
+                        <a data-fancybox="gallery" href="./images/sertificates/document1.png" class="sertificates_slider-item">
                             <img loading="lazy" src="./images/sertificates/document3.png" alt="Сертификат">
-                        </div>
+                        </a>
                 </div>
                 <!-- <button class="sertificates_slider-control">
                     <img src="./images/sertificates/Arrow 2.png" alt="Стрелка">
@@ -594,18 +598,21 @@
         <div class="subscribe_section-bg"></div>
         <div class="wrapper">
             <form class="subscribe_form">
-                <h2 class="subscribe_title">
-                    Подпишитесь на рассылку
-                </h2>
-                <p class="subscribe_subtitle">
-                    Подпишитесь, чтобы получать интересные новости, видео-рецепты, а также скидки и подарки.
-                </p>
+                <div>
+                                    <h2 class="subscribe_title">
+                                        Подпишитесь на рассылку
+                                    </h2>
+                                    <p class="subscribe_subtitle">
+                                        Подпишитесь, чтобы получать интересные новости, видео-рецепты, а также скидки и подарки.
+                                    </p>
+                </div>
                 <div class="subscribe_send">
                     <input class="subscribe_input-email" type="email" placeholder="Ваш e-mail">
                     <button class="btn subscribe_btn">Отправить</button>
                 </div>
             </form>
         </div>
+        <div class="subscribe_section-bg-phone"></div>
     </div>
     <footer class="footer_section">
         <div class="wrapper">
@@ -713,7 +720,7 @@
     <div class="credits_container">
         <div class="wrapper">
             <div class="credits">
-                <p class="credits_title"> <span class="line"></span> © 2021 AruBio</p>
+                <p class="credits_title credits_title-arubio"> <span class="line"></span> © 2021 AruBio</p>
                 <a class="credits_title" href="/">Политика конфиденциальности</a>
                 <a class="credits_title" href="/">Разработка сайта WPNEW</a>
             </div>

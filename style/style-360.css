@@ -1,0 +1,171 @@
+@media(max-width: 360px){
+    .phone_menu-item-left.phone_menu-number > a {
+        display: none;
+    }
+    .cart p {
+        display: none;
+    }
+    .slider_section {
+        display: none;
+    }
+    .banners {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: none;
+        margin: 0;
+    }    
+    .banners_item p{
+      width: 225px;
+    }
+    .wrapper {
+        width: 334px;
+    }
+    .phone_menu-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburger {
+        margin-right: 21px;
+    }
+    .logo-phone {
+        margin-right: 20px;
+
+    }
+    .phone_menu-item {
+        margin-right: 18px;
+    }
+    .phone_menu-number img {
+        height: 22px;
+        width: 22px;
+        margin-bottom: 6px;
+    }
+    .banners_section {
+        margin-bottom: 60px;
+    }
+    .banners_item {
+        height: 60px;
+        width: 60px;
+    }
+    .categories_list_item {
+        min-width: 330px;
+        margin-bottom: 20px;
+    }
+    .popular_item {
+        margin-left: 0;
+        align-items: center;
+    }
+    .popular_item-buy-btn {
+        top:438px;
+    }
+    .popular_title {
+        font-size: 30px;
+    }
+    .pricelist {
+        background-position: 223% 40px;
+    }
+    .pricelist_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricelist_form-input {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .pricelist_form-btn {
+        width: 300px;
+    }
+    .about_title-block {
+        width: 360px;
+    }
+    .about_image-block-phone img {
+        margin-left: 0;
+    }
+    .socials-block {
+        margin-left: 0;
+    }
+    .recipes_title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .recipes_btn {
+        display: none;
+    }
+    .recipes_video-thumb {
+    height: 179px;
+    width: 330px;
+    }
+    .work_title {
+        font-size: 30px;
+    }
+    .work_subtitle-item-title {
+        width: 330px;
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .work_background-img { 
+        display: none;     
+    }
+    .work_subtitle {
+        width: 330px;
+    }
+    .work_subtitle-block {
+        margin-left: 15px;
+    }
+    .work_container {
+        margin: 0;
+    }
+    .work_subtitle-item img {
+        margin-bottom: 0px;
+    }
+    .wrapper-phone {
+        width: 100%;
+    }
+    .partners_slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .partners_slider .slick-slide img {
+        /* margin: 0 auto; */
+    }
+    .subscribe_section {
+        margin-bottom: 10px;
+    }
+    .subscribe_form {
+        padding: unset;
+    }
+    .subscribe_title {
+        margin-left: unset;
+    }
+    .subscribe_subtitle {
+        margin-left: unset;
+    }
+    .subscribe_input-email {
+        margin-right: 0;
+    }
+    .subscribe_section-bg {
+        display: none;
+    }
+    .subscribe_section-bg-phone {
+        display: none;
+        background-image: url(../images/subscribe-bg-phone.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 360px;
+        height: 100%;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_navigation {
+        flex-direction: column;
+    }
+    .footer_socials-block {
+        margin-bottom: 30px;
+    }
+}

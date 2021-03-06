@@ -26,6 +26,14 @@ $(document).ready(function(){
                     slidesToScroll: 1,
                     infinite: true,
                   }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                  }
             }
         ]
     }
@@ -44,6 +52,16 @@ $(document).ready(function(){
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
+                  }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode:true,
+                    variableWidth: true,
                   }
             }
         ]
