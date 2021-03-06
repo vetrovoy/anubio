@@ -267,16 +267,16 @@
 	.work_subtitle-item img {
 		margin-bottom: 15px;
 	}
-/*	.subscribe_section-bg {
-		position: absolute;
-		height: 476px;
-		width: 599px;
-		top: -48px;
-		right: -17px;
-		background-image: url(../images/subscribe-bg-phone.png);
-		background-repeat: no-repeat;
-		background-position: right;
-	}*/
+    .subscribe_section-bg {
+    position: absolute;
+    height: 389px;
+    width: 450px;
+    top: 0px;
+    right: 0;
+    background-image: url(../images/subscribe-bg-phone.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    }
 	.subscribe_title {
 		margin-left: 48px;
 	}
@@ -366,5 +366,25 @@
 	.pricelist_section {
 		margin-bottom: 70px;
 	}
-
+	.footer {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer_phone {
+		display: flex;
+		margin-bottom: 30px;
+	}
+	.footer_section {
+		border: 1px solid #F3F3F3;
+		padding: 14px 0 14px 0 ;
+		margin-bottom: 26px;
+	}
+	.footer_contacts-item {
+		margin-bottom: 10px;
+		margin-right: 14px;
+	}
+	.footer_contacts-item-container {
+		margin-bottom: 30px;
+	}
+	
 }

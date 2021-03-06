@@ -52,16 +52,6 @@
     .subscribe_section {
         background-color: #F5F5F5;
     }
-    .subscribe_section-bg {
-    position: absolute;
-    height: 389px;
-    width: 450px;
-    top: 0px;
-    right: 0;
-    background-image: url(../images/subscribe-bg-phone.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    }
     .subscribe_subtitle {
         width: 367px;
     }

@@ -11,33 +11,33 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
     }
     );
-    $('.sertificates_slider').slick({
-        arrows: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        nextArrow: '<button class="sertificates_slider-control"><img src="./images/sertificates/Arrow 2.png" alt="Стрелка"></button>',
-        prevArrow: '<button class="sertificates_slider-control"><img src="./images/sertificates/Arrow 2.png" alt="Стрелка"></button>',
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                  }
-            },
-            {
-                breakpoint: 360,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                  }
-            }
-        ]
-    }
-    );
+    $(".sertificates_slider").slick({
+      arrows: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      nextArrow:
+        '<button class="sertificates_slider-control"><img src="./images/sertificates/Arrow 2.png" alt="Стрелка"></button>',
+      prevArrow:
+        '<button class="sertificates_slider-control"><img src="./images/sertificates/Arrow 2.png" alt="Стрелка"></button>',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 680,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
     $('.partners_slider').slick({
         arrows: false,
         infinite: true,

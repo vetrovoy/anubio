@@ -1074,10 +1074,10 @@ header {
     font-weight: 500;
 }
 .footer_section {
-    border: 2px solid #F3F3F3;
+    border: 1px solid #F3F3F3;
     padding: 29px 0 29px 0 ;
 }
-.footer {
+.footer_main {
     display: flex;
     justify-content: space-between;
 }
@@ -1169,6 +1169,24 @@ header {
 }
 .footer_contacts-items-block {
     margin-bottom: 30px;
+}
+.footer_phone {
+    display: none;
+    justify-content: space-between;
+}
+.footer_contacts-phone-right .footer_contacts-item {
+    display: flex;
+    flex-direction: column;
+}
+.footer_contacts-phone-left {
+    margin-left: 48px;
+}
+.footer_contacts-phone-right {
+    margin-right: 182px;
+}
+.footer_contacts-item-container {
+    display: flex;
+    margin-right: 36px;
 }
 .credits {
     display: flex;
