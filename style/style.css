@@ -349,7 +349,7 @@ header {
     z-index: -1;
     width: 57%;
     height: 419px;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 80px 0px 0px 80px;
     /* background: url('./images/background.jpg') center right / contain no-repeat; */
     background-image: url(../images/header-bg.png);
     /* background-repeat: no-repeat; */
@@ -479,7 +479,7 @@ header {
     flex-direction: column;
     padding: 20px 33px 20px 33px;
     position: relative;
-    margin-right: 25px;
+    margin-right: 15px;
     border: 1px solid transparent;
 }
 
@@ -1019,9 +1019,6 @@ header {
     background-repeat: no-repeat;
     background-position: right;
 }
-.subscribe_section-bg-phone {
-    display: none;
-}
 .subscribe_form {
     height: 367px;
     background-color: #F5F5F5;
@@ -1039,6 +1036,20 @@ header {
     color:#501932;
     margin-bottom: 15px;
     margin-left: 96px;
+}
+.subscribe_section-bg-phone {
+    display: none;
+    position:relative;
+    height: 200px;
+    width: 100%;
+    background-color: #FFBE34;
+}
+.subscribe_section-bg-phone img {
+        position: absolute;
+        /* height: 476px;
+        width: 599px; */
+        bottom:-17px;
+        right: 0;
 }
 .subscribe_subtitle {
     max-width: 471px;
@@ -1189,6 +1200,7 @@ header {
 }
 .footer_contacts-item-container {
     display: flex;
+    align-items: center;
     margin-right: 36px;
 }
 .credits {
@@ -1203,6 +1215,7 @@ header {
     text-decoration: underline;
     color: #777777;
     margin-left: 60px; 
+    font-weight: 300;
 }
 .line {
     position: absolute;
@@ -1325,7 +1338,7 @@ header {
 .sidebar_logo {
     width: 77px;
     height: 46px;
-    /* margin-top: 10px; */
+    margin-left: 55px;
     margin-bottom: 24px;
 }
 .sidebar_header {

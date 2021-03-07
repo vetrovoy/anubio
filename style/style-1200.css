@@ -77,6 +77,7 @@
 	}
 	.slider_background {
 		right: -17px;
+		width: 61%;
 	}
 	/* .slider_title-block {
 		max-width: 500px;
@@ -136,9 +137,15 @@
 		margin-bottom: 30px;
 	}
 	.popular {
-		/* justify-content: center; */
+		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 70px;
+	}
+		.popular_item {
+		/* margin-right: 15px; */
+	}
+	.popular_item:nth-child(4){
+		display: none;
 	}
 	.popular_item {
 		margin-bottom: 40px;
@@ -268,14 +275,14 @@
 		margin-bottom: 15px;
 	}
     .subscribe_section-bg {
-    position: absolute;
-    height: 389px;
-    width: 450px;
-    top: 0px;
-    right: 0;
-    background-image: url(../images/subscribe-bg-phone.png);
-    background-repeat: no-repeat;
-    background-position: right;
+		position: absolute;
+		height: 389px;
+		width: 450px;
+		top: 0px;
+		right: 0;
+		background-image: url(../images/subscribe-bg-phone.png);
+		background-repeat: no-repeat;
+		background-position: right;
     }
 	.subscribe_title {
 		margin-left: 48px;
@@ -307,7 +314,7 @@
 	.footer_navigation-block-phone {
 		margin-right: 70px;
 	}
-	.credits {
+	.credits_container {
 		display: none;
 	}
 	.about_section {
@@ -339,6 +346,7 @@
 	}
 	.pricelist_form {
 		display: flex;
+		flex-wrap: wrap;
 	}
 	.pricelist_title-block {
 		/*margin-bottom: 30px;*/
@@ -350,9 +358,12 @@
 	.pricelist_form-input {
 		width: 230px;
 		margin-right: 10px;
+		margin-bottom: 15px;
 	}
 	.subscribe_section {
 		margin-bottom: 30px;
+		/* border-radius: 80px 0 0 80px;
+		background-color: #F5F5F5; */
 	}
 	.partners_section {
 		margin-bottom: 60px;
@@ -386,5 +397,4 @@
 	.footer_contacts-item-container {
 		margin-bottom: 30px;
 	}
-	
 }
