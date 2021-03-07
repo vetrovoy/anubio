@@ -157,13 +157,20 @@
     	box-shadow: unset;
 	}
 	.popular_item:nth-child(2n -1) {
-		margin-left: 30px;
+		margin-left: 16px;
 	}
 	.popular_item-title {
 		margin-bottom: 5px;
 	}
 	.popular_item-price-block {
 		margin-bottom: unset;
+		margin-left: 20px;
+	}
+	.popular_item-title,.popular_item-rating-block,.popular_item-price-block {
+		margin-left: 20px;
+	}
+	.popular_item-review {
+		margin-left: 5px;
 	}
 	.popular_item:hover {
 		border-color: transparent;
@@ -246,8 +253,8 @@
 	}
 
 	.work_background {
-	width: 98.25%;
-    height: 896px;
+		width: 98.25%;
+    	height: 896px;
 	}
 
 	.work_background-img {

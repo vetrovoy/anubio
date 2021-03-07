@@ -1,0 +1,24 @@
+@media(max-width: 1600px){
+    .work_background {
+        width: 89.25%;
+    }
+    .about_section-bg {
+        width: 91.25%;
+    }
+}
+@media(max-width: 1366px){
+    .work_background {
+        width: 93.25%;
+    }
+    .about_section-bg {
+        width: 97.25%;
+    }
+}
+@media(max-width: 1280px){
+    .work_background {
+        width: 96.25%;
+    }
+    .about_section-bg {
+        width: 99.25%;
+    }
+}
