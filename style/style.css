@@ -349,7 +349,7 @@ header {
     z-index: -1;
     width: 57%;
     height: 419px;
-    border-radius: 80px 0px 0px 80px;
+    border-radius: 30px 0px 0px 30px;
     /* background: url('./images/background.jpg') center right / contain no-repeat; */
     background-image: url(../images/header-bg.png);
     /* background-repeat: no-repeat; */
@@ -468,6 +468,7 @@ header {
 }
 .popular {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -20px;
     margin-right: -20px;
 }
@@ -476,11 +477,12 @@ header {
     border-radius: 18px;
     display: flex;
     flex-direction: column;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 33px 20px 33px;
     position: relative;
-    margin-right: 15px;
+    margin-right: 25px;
     border: 1px solid transparent;
 }
+
 .pupular_item-image {
     margin-bottom: 11px;
 }
@@ -562,10 +564,12 @@ header {
 .star {
     width: 15px;
     height: 15px;
-    margin-right: 3px;
+    margin-right: 7px;
 }
 .popular_item-review {
     color: #7777;
+    margin-left: 16px;
+    font-size: 16px;
 }
 .popular_item-buy-btn {
     color: #501932;
@@ -599,6 +603,7 @@ header {
 .pricelist_title-block {
     max-width: 260px;
     margin-right: 35px;
+    color: #501932;
 }
 .pricelist_form {
     display: flex;
@@ -762,8 +767,7 @@ header {
 .recipes_subtitle {
     max-width: 430px;
     margin-bottom: 36px;
-    /* color: #343232; */
-    color: Black;
+    color: #343232;
     font-size: 16px;
     line-height: 26px;
     font-weight: 500;

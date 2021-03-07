@@ -8,7 +8,8 @@
     }
     .slider_background {
         width: 753px;
-        height: 324px;
+        /* height: 324px; */
+        height: 260px;
         right: -16px;
     }
     .slider .slick-slide {
@@ -16,7 +17,6 @@
         align-items: center;
     }
     .slider .slick-slide img {
-        
         height: 411px;
         width: 451px;
     }
@@ -26,6 +26,22 @@
     }
     .slider_title-block-phone {
         margin-bottom: 100px;
+    }
+    .slider_title-block {
+        position: absolute;
+        left: 0;
+        bottom: 54px;
+        max-width: unset;
+    }
+    .slider_section {
+        height: 625px;
+    }
+    .slider_image-block {
+        /* top: unset; */
+        right: unset;
+        bottom: 132px;
+        left: 36px;
+        z-index: -1;
     }
     .phone-wrapper {
 		width: 90%;

@@ -1,3 +1,213 @@
-@media(max-width: 360px){
-    
+@media(max-width: 450px){
+   .phone-link {
+       display: none;
+   } 
+   .wrapper {
+       width: 92%;
+   }
+   .phone_menu-number img {
+       width: 22px;
+       height: 22px;
+   }
+   .header-phone_nav-hamburger {
+       margin-right: 21px;
+   }
+   .logo-phone {
+       margin-right: 20px;
+   }
+   .phone_menu-item {
+       margin-right: 18px;
+   }
+   .phone_menu-right .cart > p:nth-child(3) {
+       display: none;
+   }
+   .slider .slick-slide img {
+       width: 280px;
+       height: 255px;
+   }
+   .slider_background {
+    top: 32px;
+    height: 173px;
+    width: 100%;
+   }
+   .slider_title h1 {
+       font-size: 31px;
+       line-height: 36px;
+   }
+   .slider_section {
+       height: 506px;
+   }
+   .slider_title-block {
+        left: 0;
+        top: calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+   .slider_image-block {
+       top: 0px;
+       left: 5px;
+   }
+   .slider_button {
+       margin-right: 10px;
+       width: 330px;
+       min-height: 48px;
+    }
+    .slick-initialized .slick-slide.slider-item {
+        height: 560px;
+        margin-bottom: 30px;
+    }
+    .slider_section {
+        margin-bottom: 120px;
+    }
+    .banners {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .banners_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: unset;
+    }
+    .banners_item:last-child {
+        margin-bottom: 0px;
+    }
+    .banners_item p {
+        width: 100%;
+    }
+    .categories_title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    .categroise-list {
+        min-width: 100%;
+        margin-right: 0;
+    }
+    .categories_list_item {
+        width: 330px;
+        margin-left: 0;
+    }
+    .categories_list_item {
+        margin-right: 0;
+    }
+    .categories_list_item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .popular_title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .popular {
+        justify-content: center;
+    }
+    .popular {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .popular_item {
+        margin: 0px 20px 40px 11px;
+    }
+    .popular_item:nth-child(3) {
+        display: none;
+    }
+    .popular_item:nth-child(4) {
+        display: none;
+    }
+    .popular_item:nth-child(2n -1) {
+        margin-left: 11px;
+    }
+    .popular_item-add-btn {
+        left: -17px;
+    }
+    .popular_item-buy-btn {
+        left:54%;
+    }
+    .pricelist_subtitle {
+        width: 297px;
+    }
+    .pricelist_form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pricelist_form-input {
+        margin-right: 0;
+        width: 100%;
+    }
+    .pricelist_form-btn {
+        width: 100%;
+    }
+    .pricelist_form-input {
+        margin-bottom: 16px;
+    }
+    .about_subtitle-item {
+        width: 297px;
+    }
+    .about_image-block-phone {
+        width: 100%;
+    }
+    .about_image {
+        margin-left: 7px;
+    }
+    .recipes_title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .recipes_subtitle {
+        line-height: 22px;
+    }
+    .recipes_video-thumb {
+        width: 330px;
+    }
+    .work_title {
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .work_subtitle-item-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .work_subtitle {
+        line-height: 22px;
+        width: 330px;
+    }
+    .work_subtitle-block {
+        margin-left: 15px;
+    }
+    .work_background {
+        width: 100%;
+        border-radius: 50px 0 0 50px;
+    }
+    .work_background-img {
+        top: 39%;
+        right: -143px;
+    }  
+    .sertificates_title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .sertificates_slider-item {
+        margin: unset;
+        padding: unset;
+    }
+    .sertificates_slider-item img {
+        max-width: 212px;
+        padding: unset;
+    }
+    .partners_title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .patners_slider-item-img {
+        width: 189px;
+    }
+    .patners_slider-item {
+        padding: unset;
+    }
+    .partners_slider .slick-slide img {
+        margin: 0 auto;
+    }
 }

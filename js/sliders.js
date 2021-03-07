@@ -22,15 +22,14 @@ $(document).ready(function(){
         '<button class="sertificates_slider-control"><img src="./images/sertificates/Arrow 2.png" alt="Стрелка"></button>',
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 1201,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            infinite: true,
           },
         },
         {
-          breakpoint: 680,
+          breakpoint: 681,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -38,33 +37,33 @@ $(document).ready(function(){
         },
       ],
     });
-    $('.partners_slider').slick({
-        arrows: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                  }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    centerMode:true,
-                    variableWidth: true,
-                  }
-            }
-        ]
-    }
-    );
+    $(".partners_slider").slick({
+      arrows: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1201,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 451,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            nextArrow:
+              '<button class="sertificates_slider-control"><img src="./images/sertificates/Arrow 2.png" alt="Стрелка"></button>',
+            prevArrow:
+              '<button class="sertificates_slider-control"><img src="./images/sertificates/Arrow 2.png" alt="Стрелка"></button>',
+          },
+        },
+      ],
+    });
 });
